@@ -107,10 +107,9 @@ const localVideos = [
   }
 ]
 
-export default function ClassroomPage() {
+export default function ClassroomPage({ activeVideo, setActiveVideo }) {
   const [activeCategory, setActiveCategory] = useState('All')
   const [searchQuery, setSearchQuery] = useState('')
-  const [activeVideo, setActiveVideo] = useState(null)
 
   // Filter local videos based on search & category tab
   const filteredVideos = localVideos.filter(vid => {

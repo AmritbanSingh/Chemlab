@@ -2,8 +2,7 @@ import { useState } from 'react'
 import ElementDetails from '../components/ElementDetails'
 import PeriodicTable from '../components/PeriodicTable'
 
-export default function ExplorePage() {
-  const [selectedElement, setSelectedElement] = useState(null)
+export default function ExplorePage({ selectedElement, setSelectedElement }) {
   const [searchTerm, setSearchTerm] = useState('')
   const [categoryFilter, setCategoryFilter] = useState('')
   const [stateFilter, setStateFilter] = useState('')

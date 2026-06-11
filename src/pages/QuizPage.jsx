@@ -472,6 +472,8 @@ export default function QuizPage() {
   const [timeLeft, setTimeLeft] = useState(30)
   const [userAnswers, setUserAnswers] = useState([]) // array of objects { questionId, selectedIndex, isCorrect }
 
+
+
   // Game setup
   const startQuiz = (size) => {
     setQuizSize(size)

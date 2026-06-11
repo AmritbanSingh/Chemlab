@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import ReactionLab from '../components/ReactionLab'
 
-export default function VirtualLabPage() {
+export default function VirtualLabPage({ leftEl, setLeftEl, rightEl, setRightEl }) {
   const navigate = useNavigate()
 
   return (
@@ -39,7 +39,7 @@ export default function VirtualLabPage() {
       </section>
 
       <section id="lab-bench-section">
-        <ReactionLab />
+        <ReactionLab leftEl={leftEl} setLeftEl={setLeftEl} rightEl={rightEl} setRightEl={setRightEl} />
       </section>
     </div>
   )
